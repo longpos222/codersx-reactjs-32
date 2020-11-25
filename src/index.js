@@ -1,11 +1,12 @@
-import React, { StrictMode } from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { CartProvider } from "./context/cart";
 
 ReactDOM.render(
-  <StrictMode>
+  <CartProvider>
     <App />
-  </StrictMode>,
-  document.querySelector('#root')
+  </CartProvider>,
+  document.querySelector("#root")
 );

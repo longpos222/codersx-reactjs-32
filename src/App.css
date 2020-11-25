@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* border: 1px blue dotted; */
+}
+
+div > table {
+  text-align: center;
+}
+
+.cart {
+  display: flex;
+  justify-content: flex-end;
+  font-size: x-large;
+  margin-bottom: 5px ;
+}
+
+.cart__number {
+  position: relative;
+}
+.cart__number > span {
+  position: absolute;
+  margin-top: -5px;
+  margin-left: -10px;
+  background-color: orange;
+  font-size: 50%;
+  border-radius: 40%;
+  padding: 2px 4px 0px 4px;
+  color: blue;
+  text-align: center;
+}
